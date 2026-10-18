@@ -1,0 +1,33 @@
+lockfileVersion: 1
+manifestHash: 0d90191f60b5d1c9fb3c198c6f53777408adaae54bcf5de81c1d060f11a339c4
+packages:
+  '@crewd/code-reviewer@1.0.0':
+    type: agent
+    integrity: sha256-fd7b9459fb104c2c072cd92d0927baca0ddeae26985361fc220a937a11751c50
+    skills:
+      - '@crewd/pr-template'
+      - '@crewd/review-checklist'
+      - '@crewd/owasp-top10'
+      - '@crewd/pr-template@^1.0.0'
+      - '@crewd/review-checklist@^1.0.0'
+      - '@crewd/owasp-top10@^1.0.0'
+  '@crewd/owasp-top10@1.0.0':
+    type: skill
+    integrity: sha256-2439a2a35e4299122969d5fd8c51066b9fa923d64f456ee1cb60b6f0b7c34c5d
+  '@crewd/pr-template@1.0.0':
+    type: skill
+    integrity: sha256-e22c862ecfac31528ddce840c81e1d4fa42b6488d07f241e7124089b1b13886d
+  '@crewd/review-checklist@1.0.0':
+    type: skill
+    integrity: sha256-55943602b4e4069d5539e9a69e61393d792c59f67b3bba60c59df10588f0f97c
+  '@crewd/security-auditor@1.0.0':
+    type: agent
+    integrity: sha256-255bc1621b0bcd339f7523bb10138e21fd8eff9cc2611a69d4a6fba2b8453df1
+    skills:
+      - '@crewd/owasp-top10'
+      - '@crewd/threat-modeling'
+      - '@crewd/owasp-top10@^1.0.0'
+      - '@crewd/threat-modeling@^1.0.0'
+  '@crewd/threat-modeling@1.0.0':
+    type: skill
+    integrity: sha256-c29ac681a2274b1c171c55e13db9c99f711198c7c1fa72bd449549a540dab837

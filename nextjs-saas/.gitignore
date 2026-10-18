@@ -1,0 +1,18 @@
+
+# BEGIN crewd: claude-code
+.claude/agents/
+.claude/skills/
+# END crewd: claude-code
+
+# BEGIN crewd: cursor
+.cursor/rules/crewd-*
+# END crewd: cursor
+
+# BEGIN crewd: gemini-cli
+.gemini/skills/
+.agents/skills/
+# END crewd: gemini-cli
+
+# BEGIN crewd: codex
+.codex/skills/
+# END crewd: codex
