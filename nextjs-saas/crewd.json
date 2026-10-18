@@ -7,8 +7,12 @@
     "gemini-cli"
   ],
   "crew": {
-    "@crewd/code-reviewer": "*",
-    "@crewd/security-auditor": "*"
+    "@crewd/security-ops": {
+      "team": "*"
+    },
+    "@crewd/startup-founders": {
+      "team": "*"
+    }
   },
   "memory": {
     "dir": ".crewd/memory"

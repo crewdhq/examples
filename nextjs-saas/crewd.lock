@@ -1,25 +1,67 @@
 lockfileVersion: 1
-manifestHash: 0d90191f60b5d1c9fb3c198c6f53777408adaae54bcf5de81c1d060f11a339c4
+manifestHash: e6f0b093dad6ecfc146bfe06ee0cadfc12d5d6f6ddaa0235bad6e1fb2ebdaa4f
 packages:
-  '@crewd/code-reviewer@1.0.0':
+  '@crewd/chief-of-staff@1.0.0':
     type: agent
-    integrity: sha256-fd7b9459fb104c2c072cd92d0927baca0ddeae26985361fc220a937a11751c50
+    integrity: sha256-11c0d92da384ca4de0b2525a1dc3c9e3317668cff63f2f2bf64d704b4722e1a5
+  '@crewd/compliance-mapper@1.0.0':
+    type: agent
+    integrity: sha256-dd80a19fd442a3aa45baba2e4518f2745e72308af22a3dd33e696f255ca1b734
+  '@crewd/experiment-design@1.0.0':
+    type: skill
+    integrity: sha256-a2483218bb6955fcae99b5bf0f37627b184cf9792474bd4a90562dd927326292
+  '@crewd/growth-experimenter@1.0.0':
+    type: agent
+    integrity: sha256-9bd4c17bf0b4d1e18640cae638fd17d7f8a5a32987eef90a85eb9a5dc1084924
     skills:
-      - '@crewd/pr-template'
-      - '@crewd/review-checklist'
-      - '@crewd/owasp-top10'
-      - '@crewd/pr-template@^1.0.0'
-      - '@crewd/review-checklist@^1.0.0'
-      - '@crewd/owasp-top10@^1.0.0'
+      - '@crewd/experiment-design'
+      - '@crewd/experiment-design@^1.0.0'
+  '@crewd/incident-responder@1.0.0':
+    type: agent
+    integrity: sha256-df893a71909b341361dbcefc0a8900b906131c0d33e3192c2f8f6fa31f0802c3
+    skills:
+      - '@crewd/postmortem-template'
+      - '@crewd/postmortem-template@^1.0.0'
+  '@crewd/lean-canvas@1.0.0':
+    type: skill
+    integrity: sha256-f93381a42d3d6db7808048b4548cf2187d93b72b8e72d624e038976446d1d62b
+  '@crewd/mvp-hacker@1.0.0':
+    type: agent
+    integrity: sha256-4e26b43dea38b8ec249744f3a75f970247599439182d73f963ba31af31ac6157
   '@crewd/owasp-top10@1.0.0':
     type: skill
     integrity: sha256-2439a2a35e4299122969d5fd8c51066b9fa923d64f456ee1cb60b6f0b7c34c5d
-  '@crewd/pr-template@1.0.0':
+  '@crewd/postmortem-template@1.0.0':
     type: skill
-    integrity: sha256-e22c862ecfac31528ddce840c81e1d4fa42b6488d07f241e7124089b1b13886d
-  '@crewd/review-checklist@1.0.0':
+    integrity: sha256-400444862175627793c6949dec878984fa421383e01e9a7ff4d457fed96d0085
+  '@crewd/pricing-framework@1.0.0':
     type: skill
-    integrity: sha256-55943602b4e4069d5539e9a69e61393d792c59f67b3bba60c59df10588f0f97c
+    integrity: sha256-8cdaa82fb48c4d6510dd673a7a8f46958749cb67d4741a50639c153c2ae9695e
+  '@crewd/pricing-strategist@1.0.0':
+    type: agent
+    integrity: sha256-d15f307a36f22fa2a565a901eb348ea9d1fc7b778ca60d0ae6fee63f6668d928
+    skills:
+      - '@crewd/lean-canvas'
+      - '@crewd/pricing-framework'
+      - '@crewd/lean-canvas@^1.0.0'
+      - '@crewd/pricing-framework@^1.0.0'
+  '@crewd/product-manager@1.0.0':
+    type: agent
+    integrity: sha256-59cd622ddea1d99dc94864db4dd1ae91378dc3eac0dc613c44abc39bdcc6b7c1
+    skills:
+      - '@crewd/lean-canvas'
+      - '@crewd/pricing-framework'
+      - '@crewd/lean-canvas@^1.0.0'
+      - '@crewd/pricing-framework@^1.0.0'
+  '@crewd/red-team-operator@1.0.0':
+    type: agent
+    integrity: sha256-ebb145eba71055d4d14e15981f87939deb1411629d92594f1a0056d21dd9cd49
+    skills:
+      - '@crewd/threat-modeling'
+      - '@crewd/threat-modeling@^1.0.0'
+  '@crewd/secrets-sentinel@1.0.0':
+    type: agent
+    integrity: sha256-516cf0d4393ed850caa8563b64571567037cd59485d33d8f1c0d6f9a70217dd2
   '@crewd/security-auditor@1.0.0':
     type: agent
     integrity: sha256-255bc1621b0bcd339f7523bb10138e21fd8eff9cc2611a69d4a6fba2b8453df1
@@ -28,6 +70,40 @@ packages:
       - '@crewd/threat-modeling'
       - '@crewd/owasp-top10@^1.0.0'
       - '@crewd/threat-modeling@^1.0.0'
+  '@crewd/security-ops@1.0.0':
+    type: team
+    integrity: sha256-4197740793081cd2dce9950086e5e8033ea12657d898cd16582a36f307c5e359
+    members:
+      '@crewd/compliance-mapper@^1.0.0': Compliance
+      '@crewd/incident-responder@^1.0.0': Response
+      '@crewd/red-team-operator@^1.0.0': Pen testing
+      '@crewd/secrets-sentinel@^1.0.0': Secrets
+      '@crewd/security-auditor@^1.0.0': Code audit
+      '@crewd/threat-modeler@^1.0.0': Design review
+  '@crewd/startup-founders@1.0.0':
+    type: team
+    integrity: sha256-7777b4d0984782228d7cadaef8378def43d00790c64d47f065289b0d176a0bef
+    members:
+      '@crewd/chief-of-staff@^1.0.0': Operations
+      '@crewd/growth-experimenter@^1.0.0': Growth
+      '@crewd/mvp-hacker@^1.0.0': Prototype
+      '@crewd/pricing-strategist@^1.0.0': Pricing
+      '@crewd/product-manager@^1.0.0': Product
+      '@crewd/venture-strategist@^1.0.0': Strategy
+  '@crewd/threat-modeler@1.0.0':
+    type: agent
+    integrity: sha256-88f2bbeece8b2cb6c4d2484a24acffc50d9ed563f253ddd9c2b29e2d9db9804f
+    skills:
+      - '@crewd/threat-modeling'
+      - '@crewd/threat-modeling@^1.0.0'
   '@crewd/threat-modeling@1.0.0':
     type: skill
     integrity: sha256-c29ac681a2274b1c171c55e13db9c99f711198c7c1fa72bd449549a540dab837
+  '@crewd/venture-strategist@1.0.0':
+    type: agent
+    integrity: sha256-31c8ea8027d9f07a3d394c58eb539b21139eadba162c06cf4404d66f5683c9ad
+    skills:
+      - '@crewd/lean-canvas'
+      - '@crewd/pricing-framework'
+      - '@crewd/lean-canvas@^1.0.0'
+      - '@crewd/pricing-framework@^1.0.0'
